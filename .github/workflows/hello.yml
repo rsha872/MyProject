@@ -7,6 +7,9 @@ on:
 jobs:
   greet:
     runs-on: ubuntu-latest
-  steps:
-    - name: Say hello to users
-      run: echo "Hello $USER"
+    steps:
+      - name: Say hello to users
+        run: echo "Hello dosto"
+
+      - name: say hello to username
+        run: echo "Hello $USER"
