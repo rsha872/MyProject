@@ -1,5 +1,6 @@
 name: Hello
 
+# run on an automatic trigger whenever change is pushed to branch[deployment]
 on:
   push:
     branches: [main]
