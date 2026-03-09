@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Rakesh Maurya | DevOps Learner</title>
+<title>Rakesh Maurya | Enterprise IT Professional</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -14,14 +15,13 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-scroll-behavior:smooth;
 font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
-background:linear-gradient(135deg,#1f1c2c,#928dab);
+background:linear-gradient(135deg,#141E30,#243B55);
 color:white;
-min-height:100vh;
 }
 
 .container{
@@ -44,8 +44,8 @@ font-weight:600;
 
 nav ul{
 display:flex;
-gap:20px;
 list-style:none;
+gap:25px;
 }
 
 nav a{
@@ -59,7 +59,7 @@ color:#00f7ff;
 }
 
 .hero{
-height:80vh;
+height:85vh;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -67,13 +67,13 @@ text-align:center;
 }
 
 .hero h1{
-font-size:50px;
+font-size:48px;
 margin-bottom:10px;
 }
 
 .hero p{
-font-size:18px;
-opacity:0.8;
+font-size:20px;
+opacity:0.85;
 }
 
 .btn{
@@ -81,9 +81,9 @@ display:inline-block;
 margin-top:20px;
 padding:12px 28px;
 border-radius:30px;
-background:rgba(255,255,255,0.2);
-backdrop-filter:blur(10px);
+background:rgba(255,255,255,0.15);
 border:1px solid rgba(255,255,255,0.3);
+backdrop-filter:blur(10px);
 transition:0.3s;
 }
 
@@ -98,17 +98,17 @@ padding:80px 0;
 }
 
 .glass{
-background:rgba(255,255,255,0.15);
-backdrop-filter:blur(12px);
+background:rgba(255,255,255,0.12);
 border-radius:20px;
 padding:40px;
+backdrop-filter:blur(12px);
 border:1px solid rgba(255,255,255,0.2);
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
 .section-title{
 text-align:center;
-font-size:32px;
+font-size:34px;
 margin-bottom:40px;
 }
 
@@ -120,9 +120,9 @@ gap:20px;
 
 .skill{
 padding:20px;
+text-align:center;
 border-radius:15px;
 background:rgba(255,255,255,0.1);
-text-align:center;
 transition:0.3s;
 }
 
@@ -132,22 +132,21 @@ background:#00f7ff;
 color:black;
 }
 
-.projects{
+.experience{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
-.project-card{
+.exp-card{
+background:rgba(255,255,255,0.1);
 padding:25px;
 border-radius:15px;
-background:rgba(255,255,255,0.1);
-transition:0.4s;
+transition:0.3s;
 }
 
-.project-card:hover{
-transform:scale(1.05);
-background:rgba(0,247,255,0.3);
+.exp-card:hover{
+transform:scale(1.03);
+background:rgba(0,247,255,0.25);
 }
 
 .contact{
@@ -161,6 +160,7 @@ opacity:0.7;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -168,23 +168,27 @@ opacity:0.7;
 <div class="container">
 
 <nav>
+
 <div class="logo">Rakesh Maurya</div>
 
 <ul>
 <li><a href="#about">About</a></li>
 <li><a href="#skills">Skills</a></li>
-<li><a href="#projects">Projects</a></li>
+<li><a href="#experience">Experience</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
+
 </nav>
 
 <section class="hero">
 
 <div>
-<h1>Hello, I'm Rakesh</h1>
-<p>DevOps Learner | Docker | Git | Linux Enthusiast</p>
 
-<a href="#projects" class="btn">View My Work</a>
+<h1>Hello, I'm Rakesh Maurya</h1>
+
+<p>Enterprise IT Professional | DevOps Learner | Cloud & Automation Enthusiast</p>
+
+<a href="#experience" class="btn">View Experience</a>
 
 </div>
 
@@ -197,11 +201,14 @@ opacity:0.7;
 <h2 class="section-title">About Me</h2>
 
 <p>
-I am Rakesh Maurya, a Computer Science diploma graduate passionate about
-DevOps, automation, and cloud technologies.
+I am an IT professional with a B.Tech in Electronics and Telecommunication and over 8 years of industry experience.
+I started my career at Wipro where I worked for 3 years on enterprise banking projects for Standard Chartered Bank.
+Currently I am working at DXC Technology for more than 5 years delivering solutions for global enterprise clients.
+</p>
 
-Currently learning tools like Git, Docker, and Linux to build scalable
-and efficient software systems.
+<p style="margin-top:15px">
+I have worked on multiple enterprise projects including Johnson Controls SAP implementations and currently supporting Eaton.
+I am also continuously learning modern technologies like DevOps, Docker, Git, and cloud automation.
 </p>
 
 </div>
@@ -214,36 +221,47 @@ and efficient software systems.
 
 <div class="skills">
 
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">JavaScript</div>
+<div class="skill">Linux</div>
 <div class="skill">Git</div>
 <div class="skill">Docker</div>
-<div class="skill">Linux</div>
+<div class="skill">SAP Support</div>
+<div class="skill">Automation</div>
+<div class="skill">Enterprise IT</div>
 
 </div>
 
 </section>
 
-<section id="projects">
+<section id="experience">
 
-<h2 class="section-title">Projects</h2>
+<h2 class="section-title">Professional Experience</h2>
 
-<div class="projects">
+<div class="experience">
 
-<div class="project-card">
-<h3>Docker Project</h3>
-<p>Containerized application using Docker and deployed locally.</p>
+<div class="exp-card">
+
+<h3>DXC Technology</h3>
+
+<p><strong>Duration:</strong> 5+ Years</p>
+
+<p>
+Worked on enterprise level IT solutions for global clients including Johnson Controls SAP projects
+and currently supporting Eaton infrastructure and systems.
+</p>
+
 </div>
 
-<div class="project-card">
-<h3>Git Automation</h3>
-<p>Version control and workflow management using Git and GitHub.</p>
-</div>
+<div class="exp-card">
 
-<div class="project-card">
-<h3>Linux Server Setup</h3>
-<p>Configured Linux environment for development and deployment.</p>
+<h3>Wipro</h3>
+
+<p><strong>Duration:</strong> 3 Years</p>
+
+<p>
+Worked on banking technology solutions for Standard Chartered Bank delivering
+support and enterprise application services.
+</p>
+
 </div>
 
 </div>
@@ -257,7 +275,8 @@ and efficient software systems.
 <h2 class="section-title">Contact</h2>
 
 <p>Email: your-email@example.com</p>
-<p>GitHub: github.com/rakesh</p>
+
+<p>LinkedIn: linkedin.com/in/rakesh-maurya</p>
 
 </div>
 
@@ -265,11 +284,12 @@ and efficient software systems.
 
 <footer>
 
-<p>© 2026 Rakesh Maurya | Built with HTML & CSS</p>
+<p>© 2026 Rakesh Maurya | Enterprise IT Portfolio</p>
 
 </footer>
 
 </div>
 
 </body>
+
 </html>
