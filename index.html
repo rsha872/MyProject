@@ -1,26 +1,275 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sample Website Title</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rakesh Maurya | DevOps Learner</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#1f1c2c,#928dab);
+color:white;
+min-height:100vh;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+
+.logo{
+font-size:24px;
+font-weight:600;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00f7ff;
+}
+
+.hero{
+height:80vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+opacity:0.8;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 28px;
+border-radius:30px;
+background:rgba(255,255,255,0.2);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.3);
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+background:#00f7ff;
+color:black;
+}
+
+section{
+padding:80px 0;
+}
+
+.glass{
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(12px);
+border-radius:20px;
+padding:40px;
+border:1px solid rgba(255,255,255,0.2);
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.section-title{
+text-align:center;
+font-size:32px;
+margin-bottom:40px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+}
+
+.skill{
+padding:20px;
+border-radius:15px;
+background:rgba(255,255,255,0.1);
+text-align:center;
+transition:0.3s;
+}
+
+.skill:hover{
+transform:translateY(-10px);
+background:#00f7ff;
+color:black;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.project-card{
+padding:25px;
+border-radius:15px;
+background:rgba(255,255,255,0.1);
+transition:0.4s;
+}
+
+.project-card:hover{
+transform:scale(1.05);
+background:rgba(0,247,255,0.3);
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:20px;
+opacity:0.7;
+}
+
+</style>
 </head>
+
 <body>
 
-    <h1>Welcome to My Sample Website</h1>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page.</p>
+<div class="container">
 
-    <h2>Navigation Links</h2>
-    <ul>
-        <li><a href="https://www.w3schools.com">Visit W3Schools for tutorials</a></li>
-        <li><a href="https://www.berkshirehathaway.com/">Visit an HTML-only website (Berkshire Hathaway Inc.)</a></li>
-    </ul>
+<nav>
+<div class="logo">Rakesh Maurya</div>
 
-    <h2>An Image Example</h2>
-    <p>Below is an example of an image tag. Note that you need an actual image file (e.g., "sample.jpg") in the same folder for this to display correctly.</p>
-    <!-- Replace "sample.jpg" with your image file path and update the alt text -->
-    <img src="sample.jpg" alt="Description of the image" width="300" height="200">
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div>
+<h1>Hello, I'm Rakesh</h1>
+<p>DevOps Learner | Docker | Git | Linux Enthusiast</p>
+
+<a href="#projects" class="btn">View My Work</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="glass">
+
+<h2 class="section-title">About Me</h2>
+
+<p>
+I am Rakesh Maurya, a Computer Science diploma graduate passionate about
+DevOps, automation, and cloud technologies.
+
+Currently learning tools like Git, Docker, and Linux to build scalable
+and efficient software systems.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Git</div>
+<div class="skill">Docker</div>
+<div class="skill">Linux</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>Docker Project</h3>
+<p>Containerized application using Docker and deployed locally.</p>
+</div>
+
+<div class="project-card">
+<h3>Git Automation</h3>
+<p>Version control and workflow management using Git and GitHub.</p>
+</div>
+
+<div class="project-card">
+<h3>Linux Server Setup</h3>
+<p>Configured Linux environment for development and deployment.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="glass contact">
+
+<h2 class="section-title">Contact</h2>
+
+<p>Email: your-email@example.com</p>
+<p>GitHub: github.com/rakesh</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Rakesh Maurya | Built with HTML & CSS</p>
+
+</footer>
+
+</div>
 
 </body>
 </html>
-
