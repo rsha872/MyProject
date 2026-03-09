@@ -9,6 +9,8 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
 <style>
 
 *{
@@ -20,8 +22,9 @@ scroll-behavior:smooth;
 }
 
 body{
-background:linear-gradient(135deg,#141E30,#243B55);
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
 color:white;
+min-height:100vh;
 }
 
 .container{
@@ -40,17 +43,18 @@ padding:20px 0;
 .logo{
 font-size:24px;
 font-weight:600;
+letter-spacing:1px;
 }
 
 nav ul{
 display:flex;
-list-style:none;
 gap:25px;
+list-style:none;
 }
 
 nav a{
-text-decoration:none;
 color:white;
+text-decoration:none;
 transition:0.3s;
 }
 
@@ -59,7 +63,7 @@ color:#00f7ff;
 }
 
 .hero{
-height:85vh;
+height:80vh;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -67,30 +71,30 @@ text-align:center;
 }
 
 .hero h1{
-font-size:48px;
+font-size:50px;
 margin-bottom:10px;
 }
 
 .hero p{
 font-size:20px;
-opacity:0.85;
+opacity:0.9;
 }
 
 .btn{
 display:inline-block;
-margin-top:20px;
-padding:12px 28px;
+margin-top:25px;
+padding:12px 30px;
 border-radius:30px;
 background:rgba(255,255,255,0.15);
 border:1px solid rgba(255,255,255,0.3);
 backdrop-filter:blur(10px);
-transition:0.3s;
+transition:0.4s;
 }
 
 .btn:hover{
-transform:scale(1.1);
 background:#00f7ff;
 color:black;
+transform:scale(1.1);
 }
 
 section{
@@ -99,11 +103,11 @@ padding:80px 0;
 
 .glass{
 background:rgba(255,255,255,0.12);
-border-radius:20px;
 padding:40px;
+border-radius:20px;
 backdrop-filter:blur(12px);
 border:1px solid rgba(255,255,255,0.2);
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
 
 .section-title{
@@ -114,22 +118,26 @@ margin-bottom:40px;
 
 .skills{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:25px;
 }
 
 .skill{
-padding:20px;
-text-align:center;
-border-radius:15px;
 background:rgba(255,255,255,0.1);
-transition:0.3s;
+padding:25px;
+border-radius:15px;
+text-align:center;
+transition:0.4s;
+}
+
+.skill i{
+font-size:45px;
+margin-bottom:10px;
 }
 
 .skill:hover{
-transform:translateY(-10px);
-background:#00f7ff;
-color:black;
+transform:translateY(-10px) scale(1.05);
+background:rgba(0,247,255,0.3);
 }
 
 .experience{
@@ -141,7 +149,7 @@ gap:25px;
 background:rgba(255,255,255,0.1);
 padding:25px;
 border-radius:15px;
-transition:0.3s;
+transition:0.4s;
 }
 
 .exp-card:hover{
@@ -186,9 +194,9 @@ opacity:0.7;
 
 <h1>Hello, I'm Rakesh Maurya</h1>
 
-<p>Enterprise IT Professional | DevOps Learner | Cloud & Automation Enthusiast</p>
+<p>Enterprise IT Professional | DevOps Learner | Automation Enthusiast</p>
 
-<a href="#experience" class="btn">View Experience</a>
+<a href="#skills" class="btn">Explore Skills</a>
 
 </div>
 
@@ -201,14 +209,10 @@ opacity:0.7;
 <h2 class="section-title">About Me</h2>
 
 <p>
-I am an IT professional with a B.Tech in Electronics and Telecommunication and over 8 years of industry experience.
-I started my career at Wipro where I worked for 3 years on enterprise banking projects for Standard Chartered Bank.
-Currently I am working at DXC Technology for more than 5 years delivering solutions for global enterprise clients.
-</p>
-
-<p style="margin-top:15px">
-I have worked on multiple enterprise projects including Johnson Controls SAP implementations and currently supporting Eaton.
-I am also continuously learning modern technologies like DevOps, Docker, Git, and cloud automation.
+B.Tech in Electronics and Telecommunication with 8+ years of IT industry experience.
+Started my career at Wipro working on Standard Chartered Bank projects.
+Currently working at DXC Technology delivering enterprise solutions
+for clients like Johnson Controls (SAP) and Eaton.
 </p>
 
 </div>
@@ -217,16 +221,39 @@ I am also continuously learning modern technologies like DevOps, Docker, Git, an
 
 <section id="skills">
 
-<h2 class="section-title">Skills</h2>
+<h2 class="section-title">Skills & Technologies</h2>
 
 <div class="skills">
 
-<div class="skill">Linux</div>
-<div class="skill">Git</div>
-<div class="skill">Docker</div>
-<div class="skill">SAP Support</div>
-<div class="skill">Automation</div>
-<div class="skill">Enterprise IT</div>
+<div class="skill">
+<i class="devicon-linux-plain"></i>
+<p>Linux</p>
+</div>
+
+<div class="skill">
+<i class="devicon-git-plain"></i>
+<p>Git</p>
+</div>
+
+<div class="skill">
+<i class="devicon-docker-plain"></i>
+<p>Docker</p>
+</div>
+
+<div class="skill">
+<i class="devicon-amazonwebservices-original"></i>
+<p>Cloud</p>
+</div>
+
+<div class="skill">
+<i class="devicon-javascript-plain"></i>
+<p>Automation</p>
+</div>
+
+<div class="skill">
+<i class="devicon-devicon-plain"></i>
+<p>SAP Support</p>
+</div>
 
 </div>
 
@@ -245,8 +272,7 @@ I am also continuously learning modern technologies like DevOps, Docker, Git, an
 <p><strong>Duration:</strong> 5+ Years</p>
 
 <p>
-Worked on enterprise level IT solutions for global clients including Johnson Controls SAP projects
-and currently supporting Eaton infrastructure and systems.
+Worked on enterprise systems and global IT projects including Johnson Controls SAP and Eaton infrastructure support.
 </p>
 
 </div>
@@ -258,8 +284,7 @@ and currently supporting Eaton infrastructure and systems.
 <p><strong>Duration:</strong> 3 Years</p>
 
 <p>
-Worked on banking technology solutions for Standard Chartered Bank delivering
-support and enterprise application services.
+Worked on banking applications and support systems for Standard Chartered Bank.
 </p>
 
 </div>
@@ -275,7 +300,6 @@ support and enterprise application services.
 <h2 class="section-title">Contact</h2>
 
 <p>Email: your-email@example.com</p>
-
 <p>LinkedIn: linkedin.com/in/rakesh-maurya</p>
 
 </div>
@@ -284,12 +308,11 @@ support and enterprise application services.
 
 <footer>
 
-<p>© 2026 Rakesh Maurya | Enterprise IT Portfolio</p>
+<p>© 2026 Rakesh Maurya | Professional Portfolio</p>
 
 </footer>
 
 </div>
 
 </body>
-
 </html>
