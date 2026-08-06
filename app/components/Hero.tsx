@@ -6,7 +6,7 @@ export default function Hero() {
       </h1>
 
       <p className="mt-6 text-xl">
-        Learn AWS, Docker, Kubernetes, Terraform and Jenkins.
+        Learn AWS, Docker, Kubernetes, Terraform and Github Actions and Agentic AI.
       </p>
     </section>
   );
