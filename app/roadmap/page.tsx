@@ -1,0 +1,5 @@
+export default function About() {
+  return (
+    <h1 className="text-5xl p-10">About Technical Gyan Tutorial</h1>
+  );
+}
